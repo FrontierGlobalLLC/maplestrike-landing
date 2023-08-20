@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^rust$ /rust-server-hosting [R=301,L]
+RewriteRule ^unturned$ /unturned-server-hosting [R=301,L]
+RewriteRule ^arma$ /arma-server-hosting [R=301,L]
+RewriteRule ^factorio$ /factorio-server-hosting [R=301,L]
+RewriteRule ^satisfactory$ /satisfactory-server-hosting [R=301,L]
+RewriteRule ^gmod$ /gmod-server-hosting [R=301,L]
+RewriteRule ^ark$ /ark-server-hosting [R=301,L]
+RewriteRule ^ark.html$ /ark-server-hosting [R=301,L]
+RewriteRule ^v-rising$ /vrising-server-hosting [R=301,L]
+RewriteRule ^satisfactory.html$ /satisfactory-server-hosting [R=301,L]
+RewriteRule ^squad$ /squad-server-hosting [R=301,L]
+RewriteRule ^conan-exiles$ /conan-exiles-server-hosting [R=301,L]
+RewriteRule ^space-engineers$ /space-engineers-server-hosting [R=301,L]
+RewriteRule ^game-servers$ /games [R=301,L]
+
+ErrorDocument 404 /404.html
+RewriteCond %{HTTP_HOST} ^wyvern\.host$
+RewriteRule ^/?$ "https\:\/\/www\.wyvern\.host\/" [R=301,L]
+
