@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+ErrorDocument 404 /404.html
+RewriteCond %{HTTP_HOST} ^wyvern\.host$
+RewriteRule ^/?$ "https\:\/\/www\.wyvern\.host\/" [R=301,L]
+
