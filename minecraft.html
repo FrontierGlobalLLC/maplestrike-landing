@@ -13,7 +13,26 @@
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="css/fontawesome.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
-	</head>
+  <!-- Raw Styles  -->
+  <style>
+    #budget-slider,
+    #seed-slider {
+      display: none;
+
+    }
+  </style>
+
+  <!-- <style>
+      .content-row-footer {
+        background-image: url(img/layout/main.png);
+        /* Replace "path/to/your/image.jpg" with the actual path to your image */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 180px;
+        /* Adjust the height value as per your preference */
+      }
+    </style> -->
+</head>
 	<body class="footer-dark">
 
 	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4c6c7740-5497-48cb-9108-b2f74e3ff5a4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -82,195 +101,548 @@
 				</div>
 			</section>
 			<!-- Content Row -->
-      <section class="content-row">
-        <div class="container">
-          <header class="content-header">
-            <h2>
-              <b>Our Plans</b>
-            </h2>
-            <p>
-              Our full range of products available at the fraction of the cost, Deploy your instance in minutes.
-            </p>
-          </header>
-          <div class="container data-center-services">
-            <div class="column-row align-center-bottom">
-              <div class="column-33">
-                <div class="product-box">
-                  <div class="product-header">
-                    <h4>
-                      <strong>Citrus Budget
+    <!-- Content Row -->
+    <section class="content-row">
+      <div class="container">
+        <header class="content-header">
+          <h2>
+            <b>Our Plans</b>
+          </h2>
+          <p>
+            Our full range of products available at the fraction of the cost, Deploy your instance in minutes.
+          </p>
+        </header>
+        <div class="container data-center-services">
+          <div class="column-row align-center-bottom">
+            <div class="column-33">
+              <div class="product-box">
+                <div class="product-header">
+                  <h4>
+                    <strong>Citrus Budget
+                    </strong>
+                  </h4>
+                  <p>
+                    Perfect for private & community servers or proxies.
+                  </p>
+                </div>
+                <div class="product-features">
+                  <ul>
+                    <li>
+                      <strong>AMD Ryzen
                       </strong>
-                    </h4>
-                    <p>
-                      Perfect for private & community servers or proxies.
-                    </p>
-                  </div>
-                  <div class="product-features">
-                    <ul>
-                      <li>
-                        <strong>AMD Ryzen
-                        </strong>
-                        3600
-                      </li>
-                      <li>
-                        <strong>DDR4
-                        </strong>
-                        RAM
-                      </li>
-                      <li>
-                        <strong>NVMe
-                        </strong> SSD Storage
-                      </li>
-                      <li>
-                        <strong>1Gbps
-                        </strong>
-                        Uplink
-                      </li>
-                      <li>
-                        <strong>No
-                        </strong>
-                        Player Limit
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Terrabit-scale DDoS Protection
-                      </li>
-                      <li>
-                        Dedicated IP available
-                      </li>
-                      <li>
-                        Powered by Lime Control Panel
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-order">
-                    <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/1">
-                      <i class="fas fa-shopping-cart icon-left"></i>
-                      View Plans
-                    </a>
-                  </div>
+                      3600
+                    </li>
+                    <li>
+                      <strong>DDR4
+                      </strong>
+                      RAM
+                    </li>
+                    <li>
+                      <strong>NVMe
+                      </strong> SSD Storage
+                    </li>
+                    <li>
+                      <strong>1Gbps
+                      </strong>
+                      Uplink
+                    </li>
+                    <li>
+                      <strong>No
+                      </strong>
+                      Player Limit
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Terrabit-scale DDoS Protection
+                    </li>
+                    <li>
+                      Dedicated IP available
+                    </li>
+                    <li>
+                      Powered by Lime Control Panel
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-order">
+                  <a id="view-budget-plans-button" class="button button-secondary" href="#">
+                    <i class="fas fa-shopping-cart icon-left"></i>View Budget Plans
+                  </a>
+                  </a>
                 </div>
               </div>
-              <div class="column-33">
-                <div class="product-box">
-                  <div class="product-header">
-                    <h4>
-                      <strong>Citrus Seed
+            </div>
+            <div class="column-33">
+              <div class="product-box">
+                <div class="product-header">
+                  <h4>
+                    <strong>Citrus Seed
+                    </strong>
+                  </h4>
+                  <p>
+                    Perfect for growing servers, and medium to large modpacks.
+                  </p>
+                </div>
+                <div class="product-features">
+                  <ul>
+                    <li>
+                      <strong>AMD Ryzen
                       </strong>
-                    </h4>
-                    <p>
-                      Perfect for growing servers, and medium to large modpacks.
-                    </p>
-                  </div>
-                  <div class="product-features">
-                    <ul>
-                      <li>
-                        <strong>AMD Ryzen
-                        </strong>
-                        5950X
-                      </li>
-                      <li>
-                        <strong>DDR4 ECC
-                        </strong>
-                        RAM
-                      </li>
-                      <li>
-                        <strong>NVMe
-                        </strong>SSD Storage
-                      </li>
-                      <li>
-                        <strong>1Gbps
-                        </strong>
-                        Uplink
-                      </li>
-                      <li>
-                        <strong>No
-                        </strong>
-                        Player Limit
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Terrabit-scale DDoS Protection
-                      </li>
-                      <li>
-                        Free Bot Hosting
-                      </li>
-                      <li>
-                        Powered by Lime Control Panel
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-order">
-                    <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/2">
-                      <i class="fas fa-shopping-cart icon-left"></i>
-                      View Plans
-                    </a>
-                  </div>
+                      5950X
+                    </li>
+                    <li>
+                      <strong>DDR4 ECC
+                      </strong>
+                      RAM
+                    </li>
+                    <li>
+                      <strong>NVMe
+                      </strong>SSD Storage
+                    </li>
+                    <li>
+                      <strong>1Gbps
+                      </strong>
+                      Uplink
+                    </li>
+                    <li>
+                      <strong>No
+                      </strong>
+                      Player Limit
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Terrabit-scale DDoS Protection
+                    </li>
+                    <li>
+                      Free Bot Hosting
+                    </li>
+                    <li>
+                      Powered by Lime Control Panel
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-order">
+                  <a id="view-seed-plans-button" class="button button-secondary" href="#">
+                    <i class="fas fa-shopping-cart icon-left"></i>View Seed Plans
+                  </a>
                 </div>
               </div>
-              <div class="column-33">
-                <div class="product-box">
-                  <div class="product-header">
-                    <h4>
-                      <strong>Citrus Fruit
+            </div>
+            <div class="column-33">
+              <div class="product-box">
+                <div class="product-header">
+                  <h4>
+                    <strong>Citrus Fruit
+                    </strong>
+                  </h4>
+                  <p>
+                    Perfect for the large communities that need the most power.
+                  </p>
+                </div>
+                <div class="product-features">
+                  <ul>
+                    <li>
+                      <strong>AMD Ryzen
                       </strong>
-                    </h4>
-                    <p>
-                      Perfect for the large communities that need the most power.
-                    </p>
-                  </div>
-                  <div class="product-features">
-                    <ul>
-                      <li>
-                        <strong>AMD Ryzen
-                        </strong>
-                        7950X
-                      </li>
-                      <li>
-                        <strong>DDR5 ECC
-                        </strong>
-                        RAM
-                      </li>
-                      <li>
-                        <strong>Gen 4 NVMe
-                        </strong>Storage
-                      </li>
-                      <li>
-                        <strong>10Gbps
-                        </strong>
-                        Uplink
-                      </li>
-                      <li>
-                        <strong>No
-                        </strong>
-                        Player Limit
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Terrabit-scale DDoS Protection
-                      </li>
-                      <li>
-                        Free Dedicated IP & Bot Hosting
-                      </li>
-                      <li>
-                        Powered by Lime Control Panel
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-order">
-                    <button class="button-primary button-full-width" disabled>
-                      Coming Soon
-                    </button>
-                  </div>
+                      7950X
+                    </li>
+                    <li>
+                      <strong>DDR5 ECC
+                      </strong>
+                      RAM
+                    </li>
+                    <li>
+                      <strong>Gen 4 NVMe
+                      </strong>Storage
+                    </li>
+                    <li>
+                      <strong>10Gbps
+                      </strong>
+                      Uplink
+                    </li>
+                    <li>
+                      <strong>No
+                      </strong>
+                      Player Limit
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Terrabit-scale DDoS Protection
+                    </li>
+                    <li>
+                      Free Dedicated IP & Bot Hosting
+                    </li>
+                    <li>
+                      Powered by Lime Control Panel
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-order">
+                  <button class="button-primary button-full-width" disabled>
+                    Coming Soon
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="content-row" style="padding: 0px;">
+      <div class="container">
+        <div class="slider-container">
+          <div class="slider" id="budget-slider">
+            <h4>
+              <b>Choose your package</b>
+            </h4>
+            <div class="product-slider">
+              <ul>
+                <li>
+                  <span class="value">2 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$2.50</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/5">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">4 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$5.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/6">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">6 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$7.50</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/7">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">8 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$10.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/8">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">10 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$12.50</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/9">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">12 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$15.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/10">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">16 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">Unmetered</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Backups</span>
+                  <span class="label">Including free daily off-site backups</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$20.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/11">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="content-row" style="padding: 0px 0px 30px;">
+      <div class="container">
+        <div class="slider-container">
+          <div class="slider" id="seed-slider">
+            <h4>
+              <b>Choose your package</b>
+            </h4>
+            <div class="product-slider">
+              <ul>
+                <li>
+                  <span class="value">4 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">50 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">1 Server Slice</span>
+                  <span class="label">Create 1 Additional Server</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$10.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/13">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">6 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">75 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">2 Server Slices</span>
+                  <span class="label">Create 2 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$15.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/14">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">8 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">100 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">3 Server Slices</span>
+                  <span class="label">Create 3 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$20.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/15">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">12 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">150 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">3 Server Slices</span>
+                  <span class="label">Create 3 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$30.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/16">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">16 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">200 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">4 Server Slices</span>
+                  <span class="label">Create 4 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$40.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/17">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">20 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">250 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">5 Server Slices</span>
+                  <span class="label">Create 5 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$50.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/19">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="value">24 GB</span>
+                  <span class="label">DDR4 RAM</span>
+                </li>
+                <li>
+                  <span class="value">300 GB</span>
+                  <span class="label">NVMe SSD</span>
+                </li>
+                <li>
+                  <span class="value">6 Server Slices</span>
+                  <span class="label">Create 6 Additional Servers</span>
+                </li>
+                <li>
+                  <div class="price">
+                    <span class="value">$60.00</span>
+                    <span class="label">Monthly</span>
+                  </div>
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/18">
+                    <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
 			
       <!-- Content Row -->
       <section class="content-row content-row-color content-row-footer">
@@ -385,5 +757,37 @@
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/bricks.min.js"></script>
 <script src="js/main.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const budgetButton = document.getElementById('view-budget-plans-button');
+    const seedButton = document.getElementById('view-seed-plans-button');
+    const budgetSlider = document.getElementById('budget-slider');
+    const seedSlider = document.getElementById('seed-slider');
+
+    budgetButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      budgetSlider.style.display = 'block';
+      seedSlider.style.display = 'none';
+    });
+
+    seedButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      seedSlider.style.display = 'block';
+      budgetSlider.style.display = 'none';
+    });
+  });
+</script>
+<!-- <script>
+    $(document).ready(function () {
+      $('.slider-container ul').slick({
+        slidesToShow: 3, // Number of visible cards
+        slidesToScroll: 1,
+        autoplay: true, // Auto-play the slider
+        autoplaySpeed: 2000, // Auto-play interval in milliseconds
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+      });
+    });
+  </script> -->
 </body>
 </html>
