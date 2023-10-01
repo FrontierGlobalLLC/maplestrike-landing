@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteCond %{HTTP_HOST} ^www\.citrusnode\.com [NC]
-RewriteRule ^(.*)$ http://citrusnode.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://citrusnode.com/$1 [L,R=301]
 
 ErrorDocument 404 /404.html
 RewriteCond %{HTTP_HOST} ^citrusnode\.com$
