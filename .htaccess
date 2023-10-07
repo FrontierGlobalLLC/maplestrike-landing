@@ -1,10 +1,9 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-RewriteCond %{HTTP_HOST} ^www\.citrusnode\.com [NC]
-RewriteRule ^(.*)$ https://citrusnode.com/$1 [L,R=301]
+
+# Enforce "www" prefix and HTTPS
+RewriteCond %{HTTP_HOST} ^citrusnode\.com$
+RewriteRule ^(.*)$ https://www.citrusnode.com/$1 [R=301,L]
 
 ErrorDocument 404 /404.html
-RewriteCond %{HTTP_HOST} ^citrusnode\.com$
-RewriteRule ^/?$ "https\:\/\/www\.citrusnode\.com\/" [R=301,L]
-
