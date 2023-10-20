@@ -163,10 +163,9 @@
                   </ul>
                 </div>
                 <div class="product-order">
-                  <a id="view-budget-plans-button" class="button button-secondary" href="#">
-                    <i class="fas fa-shopping-cart icon-left"></i>View Shared Plans
-                  </a>
-                  </a>
+                  <a id="view-budget-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToSlider();">
+                    <i class="fas fa-shopping-cart icon-left"></i>View Budget Plans
+                </a>
                 </div>
               </div>
             </div>
@@ -221,9 +220,9 @@
                   </ul>
                 </div>
                 <div class="product-order">
-                  <a id="view-seed-plans-button" class="button button-secondary" href="#">
+                  <a id="view-seed-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToSeedSlider();">
                     <i class="fas fa-shopping-cart icon-left"></i>View Seed Plans
-                  </a>
+                </a>
                 </div>
               </div>
             </div>
@@ -877,6 +876,26 @@
       budgetSlider.style.display = 'none';
     });
   });
+</script>
+<script>
+  function scrollToSlider() {
+      const budgetSlider = document.getElementById('budget-slider');
+      if (budgetSlider) {
+          setTimeout(function() {
+              budgetSlider.scrollIntoView({ behavior: 'smooth' });
+          }, 100); // Adjust the timeout duration as needed
+      }
+  }
+</script>
+<script>
+  function scrollToSeedSlider() {
+      const seedSlider = document.getElementById('seed-slider');
+      if (seedSlider) {
+          setTimeout(function() {
+              seedSlider.scrollIntoView({ behavior: 'smooth' });
+          }, 100); // Adjust the timeout duration as needed
+      }
+  }
 </script>
 <!-- <script>
     $(document).ready(function () {
