@@ -39,6 +39,16 @@
     }
   }
 
+  .smaller-text {
+    font-size: 16px; /* Default font size for the button text */
+  }
+
+  @media (max-width: 767px) {
+    .smaller-text {
+      font-size: 14px; /* Adjust the font size for mobile screens as needed */
+    }
+  }
+
   @media (min-width: 768px) {
     .product-box-large {
       width: 48%; /* Adjust the width as needed */
@@ -150,9 +160,9 @@
 		Rust server hosting built to perform. We are the world's leading host for Rust. Enjoy Rust in its Vanilla state, or customize your experience with uMod/Oxide.
           Our platform gives you the tools you need for the best Rust experience. Our easy-to-use control panel UI and features make it easy for starting out but with advanced tools for the seasoned gamer.
         </p>
-        <a class="button button-secondary" href="https://billing.citrusnode.com/checkout/config/23">
-          <i class="fas fa-shopping-cart icon-left"></i>CREATE A RUST SERVER | INSTANT SETUP
-        </a>
+		<a class="button button-secondary smaller-text" href="https://billing.citrusnode.com/checkout/config/23">
+			<i class="fas fa-shopping-cart icon-left"></i>CREATE A RUST SERVER | INSTANT SETUP
+		  </a>
         <p><small>Craft, survive, and fight in a ruthless multiplayer world</small></p>
       </div>
     </section>
