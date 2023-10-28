@@ -16,87 +16,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Raw Styles  -->
   <style>
-
 	.content-row-clouds {
-        background-image: url(img/layout/rust/header.png); /* Replace "path/to/your/image.jpg" with the actual path to your image */
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 500px; /* Adjust the height value as per your preference */
-        text-align: left; /* Adjust text alignment as needed */
-        padding-top: 120px; /* Adjust the padding as needed */
-      }
-
-  /* Custom CSS to ensure the cards appear side by side */
-  .product-box-large {
-    display: inline-block;
-    width: 100%;
-  }
-
-  /* Media query for mobile devices */
-  @media (max-width: 767px) {
-    .mobile-small-text {
-      font-size: 12px; /* Adjust the font size as needed for mobile screens */
-    }
-  }
-
-  .smaller-text {
-    font-size: 16px; /* Default font size for the button text */
-  }
-
-  @media (max-width: 767px) {
-    .smaller-text {
-      font-size: 14px; /* Adjust the font size for mobile screens as needed */
-    }
-  }
-
-  @media (min-width: 768px) {
-    .product-box-large {
-      width: 48%; /* Adjust the width as needed */
-      margin-right: 2%; /* Adjust the margin as needed */
-    }
-    .product-box-large:last-child {
-      margin-right: 0;
-    }
-  }
-
-			.tab-item {
-				padding-top: 10px; /* Adjust the padding value to decrease the gap above the cards */
-			}
-		
-			.tab-item .row {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				margin-left: -10px; /* Adjust the negative margin to compensate for the left gap */
-				margin-right: -10px; /* Adjust the negative margin to compensate for the right gap */
-			}
-		
-			.col-md-6 {
-				flex-basis: calc(46% - 10px); /* Adjust the flex-basis value to decrease the width of the cards */
-                max-width: calc(46% - 10px); /* Adjust the max-width value to decrease the width of the cards */
-				margin: 30px; /* Adjust the margin values to create a small gap between the cards */
-			}
-		
-			.product-box {
-				width: 100%;
-				max-width: 100%;
-			}
-		
-			.product-box-large {
-				padding: 10px;
-			}
-		
-			.align-bottom {
-				align-items: flex-end;
-			}
-			
-			.config_card {
-				margin-bottom: 0 !important; /* Adjust the margin value to decrease the gap between the cards and the 'Advanced' card */
-			}
-
+	  background-image: url(img/layout/rust/header.png);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 500px;
+	  text-align: left;
+	  padding-top: 120px;
+	}
+  
+	.product-box-large {
+	  display: inline-block;
+	  width: 100%;
+	}
+  
+	@media (max-width: 767px) {
+	  .mobile-small-text {
+		font-size: 12px;
+	  }
+  
+	  .smaller-text {
+		font-size: 14px;
+	  }
+	}
+  
+	@media (min-width: 768px) {
+	  .product-box-large {
+		width: 48%;
+		margin-right: 2%;
+	  }
+  
+	  .product-box-large:last-child {
+		margin-right: 0;
+	  }
+	}
+  
+	.tab-item {
+	  padding-top: 10px;
+	}
+  
+	.tab-item .row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  margin-left: -10px;
+	  margin-right: -10px;
+	}
+  
+	.col-md-6 {
+	  flex-basis: calc(46% - 10px);
+	  max-width: calc(46% - 10px);
+	  margin: 30px;
+	}
+  
+	.product-box {
+	  width: 100%;
+	  max-width: 100%;
+	}
+  
+	.product-box-large {
+	  padding: 10px;
+	}
+  
+	.align-bottom {
+	  align-items: flex-end;
+	}
+  
+	.config_card {
+	  margin-bottom: 0 !important;
+	}
   </style>
-
-
   
   <!-- <style>
       .content-row-footer {
