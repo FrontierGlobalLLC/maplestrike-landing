@@ -75,9 +75,6 @@
 	  max-width: 100%;
 	}
   
-	.product-box-large {
-	  padding: 10px;
-	}
   
 	.align-bottom {
 	  align-items: flex-end;
@@ -86,6 +83,18 @@
 	.config_card {
 	  margin-bottom: 0 !important;
 	}
+
+    @media (min-width: 768px) {
+      .product-box-large {
+        width: 48%;
+        margin-right: 2%;
+      }
+
+      .product-box-large:last-child {
+        margin-right: 0;
+	  }
+    }
+
   </style>
   
   <!-- <style>
