@@ -15,7 +15,7 @@
   <!-- Raw Styles  -->
   <style>
     #budget-slider,
-    #standard-slider {
+    #seed-slider {
       display: none;
 
     }
@@ -202,7 +202,7 @@
                   </ul>
                 </div>
                 <div class="product-order">
-                  <a id="view-standard-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToSeedSlider();">
+                  <a id="view-seed-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToSeedSlider();">
                     <i class="fas fa-shopping-cart icon-left"></i>View Standard Plans
                 </a>
                 </div>
@@ -417,7 +417,7 @@
     <section class="content-row" style="padding: 0px 0px 30px;">
       <div class="container">
         <div class="slider-container">
-          <div class="slider" id="standard-slider">
+          <div class="slider" id="seed-slider">
             <h4>
               <b>Choose your package</b>
             </h4>
@@ -634,7 +634,6 @@
 							</h3>
 							<p>
                 You can easily manage every aspect of your VPS server from the powerful & intuitive Virfusion control panel.
-                You can easily manage every aspect of your VPS server from the powerful & intuitive Virfusion control panel.
               </p>
               <div class="column-row">
                  <div class="column-50">
@@ -802,19 +801,19 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const budgetButton = document.getElementById('view-budget-plans-button');
-    const standardButton = document.getElementById('view-standard-plans-button');
+    const seedButton = document.getElementById('view-seed-plans-button');
     const budgetSlider = document.getElementById('budget-slider');
-    const standardSlider = document.getElementById('standard-slider');
+    const seedSlider = document.getElementById('seed-slider');
 
     budgetButton.addEventListener('click', function (event) {
       event.preventDefault();
       budgetSlider.style.display = 'block';
-      standardSlider.style.display = 'none';
+      seedSlider.style.display = 'none';
     });
 
-    standardButton.addEventListener('click', function (event) {
+    seedButton.addEventListener('click', function (event) {
       event.preventDefault();
-      standardSlider.style.display = 'block';
+      seedSlider.style.display = 'block';
       budgetSlider.style.display = 'none';
     });
   });
@@ -830,11 +829,11 @@
   }
 </script>
 <script>
-  function scrollTostandardSlider() {
-      const standardSlider = document.getElementById('standard-slider');
-      if (standardSlider) {
+  function scrollToseedSlider() {
+      const seedSlider = document.getElementById('seed-slider');
+      if (seedSlider) {
           setTimeout(function() {
-              standardSlider.scrollIntoView({ behavior: 'smooth' });
+              seedSlider.scrollIntoView({ behavior: 'smooth' });
           }, 100); // Adjust the timeout duration as needed
       }
   }
