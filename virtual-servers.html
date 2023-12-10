@@ -15,7 +15,7 @@
   <!-- Raw Styles  -->
   <style>
     #budget-slider,
-    #standard-slider {
+    #seed-slider {
       display: none;
 
     }
@@ -202,7 +202,7 @@
                   </ul>
                 </div>
                 <div class="product-order">
-                  <a id="view-standard-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToStandardSlider();">
+                  <a id="view-seed-plans-button" class="button button-secondary" href="javascript:void(0);" onclick="scrollToseedSlider();">
                     <i class="fas fa-shopping-cart icon-left"></i>View Standard Plans
                 </a>
                 </div>
@@ -417,7 +417,7 @@
     <section class="content-row" style="padding: 0px 0px 30px;">
       <div class="container">
         <div class="slider-container">
-          <div class="slider" id="standard-slider">
+          <div class="slider" id="seed-slider">
             <h4>
               <b>Choose your package</b>
             </h4>
@@ -440,7 +440,7 @@
                     <span class="value">$8.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/4gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/4gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -463,7 +463,7 @@
                     <span class="value">$12.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/6gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/6gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -486,7 +486,7 @@
                     <span class="value">$24.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/8gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/8gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -509,7 +509,7 @@
                     <span class="value">$48.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/12gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/12gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -532,7 +532,7 @@
                     <span class="value">$72.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/16gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/16gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -555,7 +555,7 @@
                     <span class="value">$96.00</span>
                     <span class="label">Monthly</span>
                   </div>
-                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-standard/24gb">
+                  <a class="button button-secondary" href="https://billing.citrusnode.com/store/citrus-seed/24gb">
                     <i class="fas fa-shopping-cart icon-left"></i>Order Now
                   </a>
                 </li>
@@ -801,19 +801,19 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const budgetButton = document.getElementById('view-budget-plans-button');
-    const standardButton = document.getElementById('view-standard-plans-button');
+    const seedButton = document.getElementById('view-seed-plans-button');
     const budgetSlider = document.getElementById('budget-slider');
-    const standardSlider = document.getElementById('standard-slider');
+    const seedSlider = document.getElementById('seed-slider');
 
     budgetButton.addEventListener('click', function (event) {
       event.preventDefault();
       budgetSlider.style.display = 'block';
-      standardSlider.style.display = 'none';
+      seedSlider.style.display = 'none';
     });
 
-    standardButton.addEventListener('click', function (event) {
+    seedButton.addEventListener('click', function (event) {
       event.preventDefault();
-      standardSlider.style.display = 'block';
+      seedSlider.style.display = 'block';
       budgetSlider.style.display = 'none';
     });
   });
@@ -829,11 +829,11 @@
   }
 </script>
 <script>
-  function scrollTostandardSlider() {
-      const standardSlider = document.getElementById('standard-slider');
-      if (standardSlider) {
+  function scrollToseedSlider() {
+      const seedSlider = document.getElementById('seed-slider');
+      if (seedSlider) {
           setTimeout(function() {
-              standardSlider.scrollIntoView({ behavior: 'smooth' });
+              seedSlider.scrollIntoView({ behavior: 'smooth' });
           }, 100); // Adjust the timeout duration as needed
       }
   }
