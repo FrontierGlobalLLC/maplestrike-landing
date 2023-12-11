@@ -456,7 +456,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
         <!-- Content Row -->
 		<section class="content-row">
 			<div class="container">
@@ -760,39 +761,6 @@
   <script src="js/imagesloaded.min.js"></script>
   <script src="js/bricks.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const budgetButton = document.getElementById('view-budget-plans-button');
-      const seedButton = document.getElementById('view-seed-plans-button');
-      const budgetSlider = document.getElementById('budget-slider');
-      const seedSlider = document.getElementById('seed-slider');
-
-      budgetButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        budgetSlider.style.display = 'block';
-        seedSlider.style.display = 'none';
-      });
-
-      seedButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        seedSlider.style.display = 'block';
-        budgetSlider.style.display = 'none';
-      });
-    });
-  </script>
-  <!-- <script>
-      $(document).ready(function () {
-        $('.slider-container ul').slick({
-          slidesToShow: 3, // Number of visible cards
-          slidesToScroll: 1,
-          autoplay: true, // Auto-play the slider
-          autoplaySpeed: 2000, // Auto-play interval in milliseconds
-          prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-          nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
-        });
-      });
-    </script> -->
-
 </body>
 
 </html>
